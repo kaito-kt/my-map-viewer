@@ -1,17 +1,20 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>マップビューア</title>
+  <title>360度画像ビューア</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/photo-sphere-viewer@5/dist/photo-sphere-viewer.min.css" />
 </head>
 <body>
-  <h1>地図をクリックして画像を切り替え！</h1>
+  <h1>地図をクリックして360度画像を見る</h1>
+
   <div id="map"></div>
-  <img id="viewer" src="images/default.jpg" alt="画像表示" />
+  <div id="viewer"></div>
 
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/photo-sphere-viewer@5/dist/photo-sphere-viewer.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
