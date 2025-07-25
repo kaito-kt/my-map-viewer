@@ -1,12 +1,9 @@
-const map = L.map('map').setView([35.17, 138.68], 13);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-// ƒNƒŠƒbƒNƒCƒxƒ“ƒg‚Å‰æ‘œ‚ð•ÏX
 map.on('click', function(e) {
+  alert('ã‚¯ãƒªãƒƒã‚¯ã•ã‚Œã¾ã—ãŸï¼');  // â† ã“ã®è¡Œã‚’è¿½åŠ 
+
   const lat = e.latlng.lat;
   const lng = e.latlng.lng;
 
-  // ƒVƒ“ƒvƒ‹‚ÈðŒF”ÍˆÍ“à‚È‚ç spot1.jpg ‚ð•\Ž¦
   if (lat > 35.16 && lat < 35.18 && lng > 138.67 && lng < 138.69) {
     document.getElementById('viewer').src = 'images/spot1.jpg';
   } else {
